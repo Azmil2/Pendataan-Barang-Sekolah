@@ -5,7 +5,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        Tambah Data
+                        Edit Data
                     </div>
                     <div class="card-body">
                         <form action="{{ route('daftar_barang.store') }}" method="post" enctype="multipart/form-data">
