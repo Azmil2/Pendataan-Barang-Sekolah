@@ -29,7 +29,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/', function () {
         return view('admin.index');
     });
-
+// Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'isAdmin']], function () {
+//     Route::get('/', function () {
+//     return view('admin.index');
+//     });
+    
         Route::resource('daftar_ruangan',DaftarRuanganController::class);
         Route::resource('jenis_barang',JenisBarangController::class);
         Route::resource('kondisi_barang',KondisiBarangController::class);

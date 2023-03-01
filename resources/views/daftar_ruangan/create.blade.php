@@ -15,6 +15,12 @@
                         <input type="text" name="ruangan" class="form-control" id="" required>
                     </div>
                 </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Lokasi</label>
+                        <input type="text" name="lokasi" class="form-control" id="" required>
+                    </div>
+                </div>
                 <div class="modal-footer">
                     <button type="reset" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>

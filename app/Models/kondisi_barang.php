@@ -15,7 +15,7 @@ class kondisi_barang extends Model
 
     public function daftar_barang()
     {
-        return $this->hasMany(Daftar_barang::class, 'id_kondisi_barang');
+        return $this->hasMany(daftar_barang::class, 'id_kondisi_barang');
     }
     public static function boot()
     {

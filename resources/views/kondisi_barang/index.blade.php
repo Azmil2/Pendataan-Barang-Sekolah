@@ -30,7 +30,7 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $kondisi_barang->kondisi_barang }}</td>
-                                            {{-- <td>{{ $kondisi_barang->->count() }}</td> --}}
+                                            <td>{{ $kondisi_barang->daftar_barang->count() }}</td>
                                             <td></td>
                                             <td>
                                                 <form action="{{ route('kondisi_barang.destroy', $kondisi_barang->id) }}" method="post">

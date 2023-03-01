@@ -32,7 +32,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link active {{ Request::is('admin/daftar_ruangan*') ? 'active' : '' }}">
+              <a href="{{ Route('home') }}" class="nav-link active {{ Request::is('admin/daftar_ruangan*') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Menu</p>
               </a>
@@ -49,10 +49,16 @@
                 <p>Jenis Barang</p>
               </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="{{ Route('kondisi_barang.index') }}" class="nav-link {{ Request::is('admin/daftar_ruangan*') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Kondisi Barang</p>
+              </a>
+            </li> --}}
+            <li class="nav-item">
+              <a href="{{ Route('daftar_barang.index') }}" class="nav-link {{ Request::is('admin/daftar_ruangan*') ? 'active' : '' }}">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Daftar Barang</p>
               </a>
             </li>
           </ul>

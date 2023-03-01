@@ -20,8 +20,9 @@
                             <table class="table">
                                 <thead>
                                     <th>No</th>
-                                    <th>Nama Ruangan</th>                                
-                                    <th>Jumlahh Ruangan</th>
+                                    <th>Nama Ruangan</th>     
+                                    <th>Lokasi</th>                           
+                                    <th>Jumlahh Barang</th>
                                     <th>Aksi</th>
                                 </thead>
                                 <tbody>
@@ -30,7 +31,8 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $daftar_ruangan->ruangan }}</td>
-                                            {{-- <td>{{ $daftar_ruangan->->count() }}</td> --}}
+                                            <td>{{ $daftar_ruangan->lokasi }}</td>
+                                            <td>{{ $daftar_ruangan->daftar_barang->count() }}</td>
                                             <td></td>
                                             <td>
                                                 <form action="{{ route('daftar_ruangan.destroy', $daftar_ruangan->id) }}" method="post">

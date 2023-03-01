@@ -14,7 +14,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="">Kategori</label>
-                        <input type="text" class="form-control" name="ruangan" value="{{$kondisi_barang->ruangan }}"
+                        <input type="text" class="form-control" name="kondisi_barang" value="{{$kondisi_barang->kondisi_barang }}"
                             id="" required>
                     </div>
                 </div>

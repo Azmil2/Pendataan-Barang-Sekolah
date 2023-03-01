@@ -21,7 +21,7 @@
                                 <thead>
                                     <th>No</th>
                                     <th>Jenis Barang</th>                                
-                                    <th>Jumlahh Jenis Barang</th>
+                                    {{-- <th>Jumlahh Barang</th> --}}
                                     <th>Aksi</th>
                                 </thead>
                                 <tbody>
@@ -30,7 +30,7 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $jenis_barang->jenis_barang }}</td>
-                                            {{-- <td>{{ $jenis_barang->->count() }}</td> --}}
+                                            {{-- <td>{{ $jenis_barang->daftar_barang->count() }}</td> --}}
                                             <td></td>
                                             <td>
                                                 <form action="{{ route('jenis_barang.destroy', $jenis_barang->id) }}" method="post">

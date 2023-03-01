@@ -27,6 +27,7 @@ class DaftarRuanganController extends Controller
          // validasi
          $validated = $request->validate([
             'ruangan' => 'required|unique:daftar_ruangans',
+            'lokasi' => 'required|unique:daftar_ruangans',
         ]);
         $daftar_ruangans = new daftar_ruangan();
         $daftar_ruangans->ruangan = $request->ruangan;
@@ -49,6 +50,8 @@ class DaftarRuanganController extends Controller
     {
         $validated = $request->validate([
             'ruangan' => 'required|',
+            'lokasi' => 'required|',
+
         ]);
         $daftar_ruangans = daftar_ruangan::findOrFail($id);
         $daftar_ruangans->ruangan = $request->ruangan;
